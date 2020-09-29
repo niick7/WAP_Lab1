@@ -21,8 +21,15 @@
     </ul>
     <p>
       <a href="https://validator.w3.org/check?uri=referer">
-        <img src="http://www.w3.org/Icons/valid-xhtml10" height="31" width="88" alt="Valid XHTML 1.0!">
+        <img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate" />
       </a>
     </p>
+
+    <script>
+      window.addEventListener('load', function () {
+        var a = document.getElementById('validator_url');
+        a.href = "https://validator.w3.org/check?uri=" + window.location.href;
+      })
+    </script>
   </body>
 </html>
